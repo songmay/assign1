@@ -25,8 +25,8 @@ PImage fighterImg;
  void draw(){
  
    background(0);
-   image(bg1Img,e,0);
-   image(bg2Img,d,0);
+   image(bg1Img,e-640,0);
+   image(bg2Img,d-640,0);
    image(fighterImg,450,240);
    
    fill(255,0,0);
@@ -35,7 +35,7 @@ PImage fighterImg;
    d=d+1;
    d%=640;
    e=e+1;
-   e%=320;
+   e%=640;
    b=b+3;
    b%=640;
    image(enemyImg,b,c);
