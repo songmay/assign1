@@ -26,16 +26,16 @@ PImage fighterImg;
  
    background(0);
    image(bg1Img,e,0);
-   image(bg2Img,d-640,0);
+   image(bg2Img,d,0);
    image(fighterImg,450,240);
    
    fill(255,0,0);
    rect(40,20,z,30);
    image(hpImg,30,20);
    d=d+1;
-   d%=1280;
+   d%=640;
    e=e+1;
-   e%=640;
+   e%=1280;
    b=b+3;
    b%=640;
    image(enemyImg,b,c);
