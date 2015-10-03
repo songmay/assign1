@@ -26,7 +26,7 @@ PImage fighterImg;
  
    background(0);
    image(bg1Img,e-320,0);
-   image(bg2Img,d+320640,0);
+   image(bg2Img,d+320,0);
    image(fighterImg,450,240);
    
    fill(255,0,0);
