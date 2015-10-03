@@ -33,7 +33,7 @@ PImage fighterImg;
    rect(40,20,z,30);
    image(hpImg,30,20);
    d=d+1;
-   d%=640;
+   d%=1280;
    e=e+1;
    e%=640;
    b=b+3;
