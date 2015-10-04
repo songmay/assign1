@@ -29,7 +29,7 @@ PImage fighterImg;
    background(0);
    image(bg1Img,e,0);
    image(bg2Img,d-640,0);
-   image(twobg1Img,f-1280,0);
+   image(twobg1Img,f-640,0);
    image(fighterImg,450,240);
    
    fill(255,0,0);
@@ -40,7 +40,7 @@ PImage fighterImg;
    e=e+1;
    e%=1280;
    f=f+1;
-   f%=1920;
+   f%=1280;
    b=b+3;
    b%=640;
    image(enemyImg,b,c);
