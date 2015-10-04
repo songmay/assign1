@@ -39,7 +39,7 @@ PImage fighterImg;
    d=d+1;
    d%=640;
    e=e+1;
-   e%=1280;
+   e%=640;
    g=g+1;
    g%=1280;
    b=b+3;
