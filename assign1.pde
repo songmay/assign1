@@ -5,8 +5,9 @@ PImage fighterImg;
  PImage enemyImg;
  PImage hpImg;
  PImage bg2Img;
+ PImage twobg2Img;
  PImage twobg1Img;
- int x,y,z,b, c,d,e,f;
+ int x,y,z,b, c,d,e,f,g;
  
  void setup(){
    size(640,480);
@@ -14,7 +15,9 @@ PImage fighterImg;
     x=floor(random(450));
     y=floor(random(400));
 
+
    twobg1Img=loadImage("img/bg1.png");
+   twobg2Img=loadImage("img/bg2.png");
    treasureImg=loadImage("img/treasure.png");
    fighterImg=loadImage("img/fighter.png");
    bg1Img=loadImage("img/bg1.png");
@@ -27,9 +30,10 @@ PImage fighterImg;
  void draw(){
  
    background(0);
-   image(bg1Img,e,0);
+   image(bg1Img,e-640,0);
    image(bg2Img,d-640,0);
-   image(twobg1Img,f-640,0);
+   image(twobg1Img,f-1280,0);
+   image(twobg2Img,g-1280,0);
    image(fighterImg,450,240);
    
    fill(255,0,0);
@@ -40,7 +44,9 @@ PImage fighterImg;
    e=e+1;
    e%=1280;
    f=f+1;
-   f%=1280;
+   f%=1920;
+   g=g+1;
+   g%=1920;
    b=b+3;
    b%=640;
    image(enemyImg,b,c);
