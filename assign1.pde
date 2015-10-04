@@ -35,7 +35,7 @@ PImage fighterImg;
    d=d+1;
    d%=1280;
    e=e+1;
-   e%=640;
+   e%=1280;
    b=b+3;
    b%=640;
    image(enemyImg,b,c);
